@@ -3,12 +3,8 @@
 require('ModelPDO/pdo.php');
 require('ModelPDO/pdomethods.php');
 require('ModelPDO/helperfunctions.php');
-/*
+
 session_start();
-$userId = $_SESSION['userId'];
-*/
-
-
 
 $action = filter_input(INPUT_POST, 'action');
 if($action == NULL){
@@ -94,11 +90,8 @@ switch($action){
     }
 
     case 'display_question_form': {
-        //session_start();
-        //$_SESSION['userId'] =$userId;
         $userId = filter_input(INPUT_GET, 'userId', FILTER_VALIDATE_INT);
 
-        session_start();
         $_SESSION['userId'] =$userId;
 
         //$emailVal = get_email($userId);                 //////////
@@ -109,7 +102,7 @@ switch($action){
 
     case 'createquestion':{
 
-        session_start();
+        //session_start();
         $userId = $_SESSION['userId'];
 
         $questionname = filter_input(INPUT_POST, 'questioname');
