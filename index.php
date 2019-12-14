@@ -3,7 +3,6 @@
 require('ModelPDO/pdo.php');
 require('ModelPDO/pdomethods.php');
 //require('ModelPDO/helperfunctions.php');
-//require('../ModelPDO/accountsdb.php');          //loginvalidation
 /*
 session_start();
 $userId = $_SESSION['userId'];
