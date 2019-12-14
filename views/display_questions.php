@@ -4,7 +4,7 @@
 
     <?php
         $username = get_name($userId);
-        echo '$username';
+        echo $username;
 
     ?>
     <tr>
