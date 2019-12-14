@@ -22,8 +22,9 @@
                 <button class="btn btn-primary btn-block">
                     <input type = "submit" value = "Submit Responses" class = "btn btn-primary bt-block">
                 </button>
-
+                <!--
                 <input type="hidden" name="userId" value="<?php echo $userId; ?>">
+                -->
                 </div>
             </form>
 <?php include('views/abstract-views/footer.php'); ?>
