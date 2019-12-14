@@ -1,6 +1,12 @@
 <?php include('views/abstract-views/header.php'); ?>
 <div class="display">
 <table class="table">
+
+    <?php
+        $username = get_name($userId);
+        echo '$username';
+
+    ?>
     <tr>
 
         <!--
