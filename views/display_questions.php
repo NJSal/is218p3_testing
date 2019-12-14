@@ -2,11 +2,13 @@
 <div class="display">
 <table class="table">
 
+    <h1>User Info: 
     <?php
 
         echo $username = get_name($userId);
 
     ?>
+    </h1>
     <tr>
 
         <!--
