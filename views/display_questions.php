@@ -1,7 +1,12 @@
 <?php include('views/abstract-views/header.php'); ?>
+<!--
+<button3>
+<a href = ".?action=display_question_form&userId=<?php echo $userId ?>">Add Question</a>
+</button3>
+-->
 <div class="display">
 <table class="table">
-
+    <!--<div class="display">-->
     <h1>User Info:
     <?php
 
@@ -33,11 +38,16 @@
                     <input type="submit" value="Delete">
                 </form></td>
         </tr>
-        <button2>
+    <!---
+        <button>
             <a href = ".?action=display_question_form&userId=<?php echo $userId ?>">Add Question</a>
-        </button2>
+        </button>
+    -->
     <?php endforeach; ?>
 </table>
+    <button2>
+        <a href = ".?action=display_question_form&userId=<?php echo $userId ?>">Add Question</a>
+    </button2>
 </div>
 <?php include ('views/abstract-views/footer.php'); ?>
 
