@@ -56,7 +56,6 @@ switch($action){
         if ($firstname == NULL || $lastname == NULL || $birthday == NULL || $email == NULL || $password == NULL) {
             $error = "Missing a field";
             echo $error;
-            //('../errors/error.php');
         }
         else{
             registeruser($email, $firstname, $lastname, $birthday, $password);
@@ -78,7 +77,7 @@ switch($action){
 
 
 
-    case 'display_questions': {         //almost done but not a 100% done
+    case 'display_questions': {
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=display_login');
