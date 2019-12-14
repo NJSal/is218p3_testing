@@ -1,6 +1,7 @@
 <?php include('views/abstract-views/header.php'); ?>
     <form action ="index.php" method = "post" class = "form-container">
         <input type="hidden" name="action" value="register">
+        <div class = "registration">
         <h2>Registration</h2>
         <br>
         <br>
@@ -34,6 +35,7 @@
         <button class="btn btn-primary btn-block">
             <input type = "submit" value = "Submit Responses" class = "btn btn-primary bt-block">
         </button>
+        </div>
     </form>
 
 <?php include('views/abstract-views/footer.php'); ?>
