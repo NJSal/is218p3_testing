@@ -2,7 +2,7 @@
 
 require('ModelPDO/pdo.php');
 require('ModelPDO/pdomethods.php');
-//require('ModelPDO/helperfunctions.php');
+require('ModelPDO/helperfunctions.php');
 /*
 session_start();
 $userId = $_SESSION['userId'];
