@@ -1,6 +1,7 @@
-<?php include('abstract-views/header.php'); ?>
+<?php include('views/abstract-views/header.php'); ?>
             <form action ="index.php" method = "post" class = "form-container">
                 <input type="hidden" name="action" value="createquestion">
+                <div class = "question">
                 <h2>Question Form</h2>
                 <br>
                 <br>
@@ -23,6 +24,6 @@
                 </button>
 
                 <input type="hidden" name="userId" value="<?php echo $userId; ?>">
-
+                </div>
             </form>
-<?php include('abstract-views/footer.php'); ?>
+<?php include('views/abstract-views/footer.php'); ?>
