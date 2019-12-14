@@ -110,8 +110,8 @@ switch($action){
 
         $skills = explode(',', $questionskills);
 
-        if ($questionbody == NULL || $questionname == NULL || $questionskills == NULL || count($skills) < 2) {
-            $error = "question body is less than ..500";
+        if (($questionbody == NULL || strlen($questionbody) >= 500)|| $questionname == NULL || $questionskills == NULL || count($skills) < 2) {
+            $error = "fields are empty & question body needs to be less than 500 words";
             echo $error;
         }
         else{
