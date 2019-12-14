@@ -3,9 +3,9 @@
 <table class="table">
 
     <?php
-        /*$username = get_name($userId);
-        echo $username;
-        */
+
+        echo $username = get_name($userId);
+        
     ?>
     <tr>
 
